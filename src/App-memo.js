@@ -44,9 +44,9 @@ function App() {
   const archieveOption = useMemo(() => {
     return {
       show: false,
-      title: 'Post archive in addition to main post'
+      title: `Post archive in addition to ${posts.length} posts`
     }
-  }, [])
+  }, [posts.length])
 
   return (
     <section>
